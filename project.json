@@ -4,11 +4,8 @@
   "description": "This project is my solution in C# to the Password Generator practice found in section 05 practice 01 of the UiPath - RPA Developer Foundation course.",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.23.3-preview]",
-    "UiPath.Mail.Activities": "[1.23.0]",
     "UiPath.System.Activities": "[24.3.1]",
-    "UiPath.Testing.Activities": "[24.4.0-preview]",
-    "UiPath.UIAutomation.Activities": "[24.4.1-preview]"
+    "UiPath.UIAutomation.Activities": "[24.4.2-preview]"
   },
   "webServices": [],
   "entitiesStores": [],

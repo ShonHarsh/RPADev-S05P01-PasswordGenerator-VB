@@ -1,0 +1,699 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1101,3283" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="670,3218" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="boolOptionLowerCase" />
+      <Variable x:TypeArguments="x:String" Name="strProgramPathNotepad">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="strWebAddress">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="strFileOutput">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="boolOptionSymbols" />
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="boolOptionUpperCase" />
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="boolOptionNumbers" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="intPasswordLength" />
+      <Variable x:TypeArguments="x:String" Name="strPasswordText">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="boolIsCheckedUpperCase" />
+      <Variable x:TypeArguments="x:String" Name="strPasswordLengthWebValue">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="boolIsCheckedLowerCase" />
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="boolIsCheckedNumbers" />
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="boolIsCheckedSymbols" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message RPADev-S05P01-PasswordGenerator.Main.Begin;" sap:VirtualizedContainerService.HintSize="608,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;RPADev-S05P01-PasswordGenerator.Main.Begin;&quot;]" />
+    <Sequence sap2010:Annotation.AnnotationText="PRACTICE REQUIREMENTS&#xA;Generate a Strong Password&#xA;First, you need to open the https://www.rpasamples.com/passwordgenerator website.&#xA;&#xA;Second, you need to generate a password with 12 characters and no symbols.&#xA;&#xA;Third, you need to click on the Copy to Clipboard button.&#xA;&#xA;Open an empty Notepad window.&#xA;&#xA;Lastly, paste the password inside Notepad using the CTRL+V keyboard shortcut." DisplayName="Sequence Initialization" sap:VirtualizedContainerService.HintSize="608,770" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:MultipleAssign DisplayName="Multiple Assign Initialization" sap:VirtualizedContainerService.HintSize="479,210" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+        <ui:MultipleAssign.AssignOperations>
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[strFileOutput]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">Data\Output\RPADev-S05P01-PasswordGenerator</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[strWebAddress]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">https://www.rpasamples.com/passwordgenerator</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[strProgramPathNotepad]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">C:\Windows\System32\notepad.exe</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+          </scg:List>
+        </ui:MultipleAssign.AssignOperations>
+      </ui:MultipleAssign>
+      <ui:MultipleAssign DisplayName="Multiple Assign Password Options" sap:VirtualizedContainerService.HintSize="479,263" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+        <ui:MultipleAssign.AssignOperations>
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:Boolean">[boolOptionLowerCase]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:Boolean">[boolOptionNumbers]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:Boolean">[boolOptionSymbols]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:Boolean">[boolOptionUpperCase]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:Int32">[intPasswordLength]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:Int32">12</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+          </scg:List>
+        </ui:MultipleAssign.AssignOperations>
+      </ui:MultipleAssign>
+    </Sequence>
+    <Sequence DisplayName="Sequence Operation" sap:VirtualizedContainerService.HintSize="608,1739" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Password Generator" sap:VirtualizedContainerService.HintSize="546,500" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a1cc7c88-8a5d-4579-9f2d-0c05ccf2a9f9" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do Do Password Generator Operations" sap:VirtualizedContainerService.HintSize="512,251" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Sequence Get Initial Web Page Values" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="text" DisplayName="Get Attribute 'Password length'" sap:VirtualizedContainerService.HintSize="388,239" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[strPasswordLengthWebValue]" ScopeIdentifier="a1cc7c88-8a5d-4579-9f2d-0c05ccf2a9f9" Version="V3">
+                  <uix:NGetAttributeGeneric.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="509, 341, 28, 20" CvTextArgument="24" CvType="Text" DesignTimeRectangle="508, 336, 34, 35" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='txt-length' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txt-length' tag='INPUT' type='text' class='len-textbox' aaname='' /&gt;" Guid="f4e20afc-037a-4781-bffa-e12b4a40d358" InformativeScreenshot="36bb7549e1a098bf6c720abf44d733e6.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="321, 342, 184, 25" CvTextArgument="Password length:" CvType="Text" DesignTimeRectangle="322, 339, 184, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl class='label-length' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='label-length' tag='SPAN' type='' aaname='Password length:' check:innerText='Password length:' /&gt;" Guid="056f26e2-10eb-4f3a-81bd-c614fd14bbdc" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NGetAttributeGeneric.Target>
+                </uix:NGetAttributeGeneric>
+                <uix:NGetAttributeGeneric x:TypeArguments="x:Boolean" Attribute="checked" DisplayName="Get Attribute 'Lower case'" sap:VirtualizedContainerService.HintSize="388,239" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_6" Result="[boolIsCheckedLowerCase]" ScopeIdentifier="a1cc7c88-8a5d-4579-9f2d-0c05ccf2a9f9" Version="V3">
+                  <uix:NGetAttributeGeneric.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="510, 387, 24, 24" CvType="CheckBox" DesignTimeRectangle="512, 389, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='chkLower' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='chkLower' tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="1ad003ff-081a-480e-ad46-7e7cc473420c" InformativeScreenshot="d7403b203be47a49995006e65f5252c5.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="535, 387, 124, 20" CvTextArgument="Lower case" CvType="Text" DesignTimeRectangle="536, 384, 123, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Lower case' class='chk-label' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Lower case' class='chk-label' tag='DIV' type='' check:innerText='Lower case' /&gt;" Guid="d3f6c981-78f2-4500-a70d-fcf1997e242b" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NGetAttributeGeneric.Target>
+                </uix:NGetAttributeGeneric>
+                <uix:NGetAttributeGeneric x:TypeArguments="x:Boolean" Attribute="checked" DisplayName="Get Attribute 'Numbers'" sap:VirtualizedContainerService.HintSize="388,239" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_7" Result="[boolIsCheckedNumbers]" ScopeIdentifier="a1cc7c88-8a5d-4579-9f2d-0c05ccf2a9f9" Version="V3">
+                  <uix:NGetAttributeGeneric.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="699, 387, 25, 24" CvType="CheckBox" DesignTimeRectangle="702, 389, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='chkNumbers' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='chkNumbers' tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="15858372-f8a7-4ba1-a7ae-165ea2876537" InformativeScreenshot="37af38e6bb00a500f289b90d7bbff0bc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="725, 387, 98, 20" CvTextArgument="Numbers" CvType="Text" DesignTimeRectangle="726, 384, 97, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Numbers' class='chk-label' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Numbers' class='chk-label' tag='DIV' type='' check:innerText='Numbers' /&gt;" Guid="32732a04-a1bf-4614-8d44-d4de309fadec" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NGetAttributeGeneric.Target>
+                </uix:NGetAttributeGeneric>
+                <uix:NGetAttributeGeneric x:TypeArguments="x:Boolean" Attribute="checked" DisplayName="Get Attribute 'Symbols'" sap:VirtualizedContainerService.HintSize="388,239" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_8" Result="[boolIsCheckedSymbols]" ScopeIdentifier="a1cc7c88-8a5d-4579-9f2d-0c05ccf2a9f9" Version="V3">
+                  <uix:NGetAttributeGeneric.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="890, 387, 24, 24" CvType="CheckBox" DesignTimeRectangle="892, 389, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='chkSymbols' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='chkSymbols' tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="bda64cf3-9510-46d4-a69a-abc6aae60d6b" InformativeScreenshot="d37f8fa9be617e3445c504dd2dd6ca0e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="914, 387, 94, 25" CvTextArgument="Symbols" CvType="Text" DesignTimeRectangle="916, 384, 92, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Symbols' class='chk-label' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Symbols' class='chk-label' tag='DIV' type='' check:innerText='Symbols' /&gt;" Guid="b97f3260-6836-4949-98ea-943d59a4f325" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NGetAttributeGeneric.Target>
+                </uix:NGetAttributeGeneric>
+                <uix:NGetAttributeGeneric x:TypeArguments="x:Boolean" Attribute="checked" DisplayName="Get Attribute 'Upper case'" sap:VirtualizedContainerService.HintSize="388,232" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_9" Result="[boolIsCheckedUpperCase]" ScopeIdentifier="a1cc7c88-8a5d-4579-9f2d-0c05ccf2a9f9" Version="V3">
+                  <uix:NGetAttributeGeneric.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="320, 387, 24, 24" CvType="CheckBox" DesignTimeRectangle="322, 389, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='chkUpper' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='chkUpper' tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="1196ef33-15b7-427a-b631-a9d857719ce4" InformativeScreenshot="74612a50a93003cc75fda8f924cc4e20.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="346, 387, 123, 25" CvTextArgument="Upper case" CvType="Text" DesignTimeRectangle="346, 384, 123, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Upper case' class='chk-label' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Upper case' class='chk-label' tag='DIV' type='' check:innerText='Upper case' /&gt;" Guid="141b0440-72fc-4676-b603-75341b312e72" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NGetAttributeGeneric.Target>
+                </uix:NGetAttributeGeneric>
+              </Sequence>
+              <Sequence DisplayName="Sequence Set Options" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If Condition="[Not CInt(strPasswordLengthWebValue) = intPasswordLength]" DisplayName="If Validate Password Length" sap:VirtualizedContainerService.HintSize="450,554" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,362" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password length'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,277" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="a1cc7c88-8a5d-4579-9f2d-0c05ccf2a9f9" Text="[intPasswordLength.ToString]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="509, 341, 28, 20" CvTextArgument="24" CvType="Text" DesignTimeRectangle="508, 336, 34, 35" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='txt-length' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txt-length' tag='INPUT' type='text' class='len-textbox' aaname='' /&gt;" Guid="85ab7ba3-64e3-4386-9126-68a03de0132c" InformativeScreenshot="12e654de28850e597429d3d78c1e3188.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="321, 342, 184, 25" CvTextArgument="Password length:" CvType="Text" DesignTimeRectangle="322, 339, 184, 27" ElementType="Text" FullSelectorArgument="&lt;webctrl class='label-length' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='label-length' tag='SPAN' type='' aaname='Password length:' check:innerText='Password length:' /&gt;" Guid="4274c3b1-9793-47b7-9677-9b8a416446d2" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                        <uix:NTypeInto.VerifyOptions>
+                          <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                            <uix:VerifyExecutionTypeIntoOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          </uix:VerifyExecutionTypeIntoOptions>
+                        </uix:NTypeInto.VerifyOptions>
+                      </uix:NTypeInto>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,22" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <If Condition="[Not boolIsCheckedLowerCase = boolOptionLowerCase]" DisplayName="If Validate Lower Case" sap:VirtualizedContainerService.HintSize="450,493" sap2010:WorkflowViewState.IdRef="If_3">
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,301" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Lower case'" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1cc7c88-8a5d-4579-9f2d-0c05ccf2a9f9" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="510, 387, 24, 24" CvType="CheckBox" DesignTimeRectangle="512, 389, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='chkLower' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='chkLower' tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="411a8709-1f56-4c2c-bc29-c27ea4019760" InformativeScreenshot="f834d7b5ce45e33555dfa911a7412b7f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="535, 387, 124, 20" CvTextArgument="Lower case" CvType="Text" DesignTimeRectangle="536, 384, 123, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Lower case' class='chk-label' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Lower case' class='chk-label' tag='DIV' type='' check:innerText='Lower case' /&gt;" Guid="8e2f62e3-2fca-4b0e-94cb-72445fcf177b" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="Checkbox 'Lower case'" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="510, 387, 24, 24" CvType="CheckBox" DesignTimeRectangle="512, 389, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='chkLower' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='chkLower' tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="82a9d73c-9508-42f4-9fe5-5ab025eabe25" InformativeScreenshot="f834d7b5ce45e33555dfa911a7412b7f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="535, 387, 124, 20" CvTextArgument="Lower case" CvType="Text" DesignTimeRectangle="536, 384, 123, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Lower case' class='chk-label' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Lower case' class='chk-label' tag='DIV' type='' check:innerText='Lower case' /&gt;" Guid="66586142-a74e-486b-8bd7-b64a1fd4c937" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:VerifyExecutionOptions.Target>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,22" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <If Condition="[Not boolIsCheckedNumbers = boolOptionNumbers]" DisplayName="If Validate Option Numbers" sap:VirtualizedContainerService.HintSize="450,493" sap2010:WorkflowViewState.IdRef="If_4">
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,301" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Numbers'" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1cc7c88-8a5d-4579-9f2d-0c05ccf2a9f9" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="699, 387, 25, 24" CvType="CheckBox" DesignTimeRectangle="702, 389, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='chkNumbers' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='chkNumbers' tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="c210b008-dd73-41a8-8bbc-c3557d95b8ac" InformativeScreenshot="e981f7b0e5a2094f63d7f5ff68fcca4b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="725, 387, 98, 20" CvTextArgument="Numbers" CvType="Text" DesignTimeRectangle="726, 384, 97, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Numbers' class='chk-label' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Numbers' class='chk-label' tag='DIV' type='' check:innerText='Numbers' /&gt;" Guid="44e88691-9a40-4f50-b19e-cdbeee5b5d03" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="Checkbox 'Numbers'" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="699, 387, 25, 24" CvType="CheckBox" DesignTimeRectangle="702, 389, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='chkNumbers' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='chkNumbers' tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="2f7fc7f7-d466-4cb3-b157-d6804468f155" InformativeScreenshot="b607dfd7fde91b5cdb5904b3a66fdea2.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="725, 387, 98, 20" CvTextArgument="Numbers" CvType="Text" DesignTimeRectangle="726, 384, 97, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Numbers' class='chk-label' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Numbers' class='chk-label' tag='DIV' type='' check:innerText='Numbers' /&gt;" Guid="7cb4b71a-1679-45c2-8fab-6f47558c6ad8" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:VerifyExecutionOptions.Target>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,22" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <If Condition="[Not boolIsCheckedSymbols = boolOptionSymbols]" DisplayName="If Validate Option Symbols" sap:VirtualizedContainerService.HintSize="450,493" sap2010:WorkflowViewState.IdRef="If_5">
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,301" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Symbols'" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1cc7c88-8a5d-4579-9f2d-0c05ccf2a9f9" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="890, 387, 24, 24" CvType="CheckBox" DesignTimeRectangle="892, 389, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='chkSymbols' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='chkSymbols' tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="fecd89bd-0c9f-4d56-8196-eca8a4be7b2a" InformativeScreenshot="f0f3ad327c5a962889fee156e97e9c78.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="914, 387, 94, 25" CvTextArgument="Symbols" CvType="Text" DesignTimeRectangle="916, 384, 92, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Symbols' class='chk-label' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Symbols' class='chk-label' tag='DIV' type='' check:innerText='Symbols' /&gt;" Guid="eebb6f0f-64c2-4d4d-bd7d-f4ebd67323f7" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="Checkbox 'Symbols'" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="890, 387, 24, 24" CvType="CheckBox" DesignTimeRectangle="892, 389, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='chkSymbols' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='chkSymbols' tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="a04dbcd1-9c8b-41a7-8583-cc47b3d2065a" InformativeScreenshot="d0e7f0add9c4b5f59970f89353aabafc.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="914, 387, 94, 25" CvTextArgument="Symbols" CvType="Text" DesignTimeRectangle="916, 384, 92, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Symbols' class='chk-label' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Symbols' class='chk-label' tag='DIV' type='' check:innerText='Symbols' /&gt;" Guid="1365fa8b-6ff6-4bdb-87b5-c6ca3d6de90f" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:VerifyExecutionOptions.Target>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,22" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+                <If Condition="[Not boolIsCheckedUpperCase = boolOptionUpperCase]" DisplayName="If Validate Upper Case" sap:VirtualizedContainerService.HintSize="450,484" sap2010:WorkflowViewState.IdRef="If_2">
+                  <If.Then>
+                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,301" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Upper case'" sap:VirtualizedContainerService.HintSize="354,216" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1cc7c88-8a5d-4579-9f2d-0c05ccf2a9f9" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="320, 387, 24, 24" CvType="CheckBox" DesignTimeRectangle="322, 389, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='chkUpper' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='chkUpper' tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="ae5327c3-2555-484c-b73d-de41c770ba6e" InformativeScreenshot="b385f5b43fab2626d048d1c007afd08c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="346, 387, 123, 25" CvTextArgument="Upper case" CvType="Text" DesignTimeRectangle="346, 384, 123, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Upper case' class='chk-label' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Upper case' class='chk-label' tag='DIV' type='' check:innerText='Upper case' /&gt;" Guid="c8624f04-5da6-4981-a15a-f62ff19eb1f3" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <uix:NClick.VerifyOptions>
+                          <uix:VerifyExecutionOptions DisplayName="Checkbox 'Upper case'" Mode="Appears">
+                            <uix:VerifyExecutionOptions.Retry>
+                              <InArgument x:TypeArguments="x:Boolean" />
+                            </uix:VerifyExecutionOptions.Retry>
+                            <uix:VerifyExecutionOptions.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="320, 387, 24, 24" CvType="CheckBox" DesignTimeRectangle="322, 389, 20, 20" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='chkUpper' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='chkUpper' tag='INPUT' type='checkbox' class='' aaname='' /&gt;" Guid="3f0251bd-9217-40ed-b7b1-f12a4a5023ab" InformativeScreenshot="3831c10afe93e1d5cd11bb2b32eac5f6.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvTextArea="346, 387, 123, 25" CvTextArgument="Upper case" CvType="Text" DesignTimeRectangle="346, 384, 123, 28" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Upper case' class='chk-label' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Upper case' class='chk-label' tag='DIV' type='' check:innerText='Upper case' /&gt;" Guid="bb26187a-2582-45b5-895f-c58c9e8dffe7" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:VerifyExecutionOptions.Target>
+                            <uix:VerifyExecutionOptions.Timeout>
+                              <InArgument x:TypeArguments="x:Double" />
+                            </uix:VerifyExecutionOptions.Timeout>
+                          </uix:VerifyExecutionOptions>
+                        </uix:NClick.VerifyOptions>
+                      </uix:NClick>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,22" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+              <Sequence DisplayName="Sequence Generate Password" sap:VirtualizedContainerService.HintSize="450,50" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Generate new password'" sap:VirtualizedContainerService.HintSize="388,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1cc7c88-8a5d-4579-9f2d-0c05ccf2a9f9" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="1025, 250, 55, 48" CvType="Icon" DesignTimeRectangle="1028, 251, 48, 48" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='pword-button refresh tooltip' aaname='Generate new password' check:text='Generate new password' /&gt;" Guid="2607b5f3-0872-4911-a6fc-98aee9f84072" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKmSURBVGhD3Zg9TmMxFIWzBJbAElgCS2AJFNQjummhpqCiJe10SNNOQUULLR0SNRIVtWe+aCw5znn2vY5fnsyRPik5ip99/Bu/1epiFb4V0hwZaY6MNEdGmiMjzZGR5shIswNHP47CyfVJOLs7C5e/Ljec35+H05vTcPzzWJbpgjQbobFXv6/Cy/tLqOnz6zM8PD/0DydNJwSxhJjS4+vjZvTUs91I0wjTil7uJTqFaarqMiNNA/Qo02YOse5UnSakWYEFPleYKOpQdVeRZgEqOpTWT2vZhiLSnICpMPfI5HKPlDQFbK/eMCxyNo3bP7eb7ZzdzCvqdG3t0hQw/BbRABpe2q1oICGt4nnqORJpZnDOWMSIeHqT0Nbzy3xOSTPDMlX4DeeSKl+DTrCgyu4gzQQeVNPbx1tzmO5IM4HFXBNTUpVdhPiBHmahMnVS6P2a8jJ0wlYljbBlu0c+/ULhff5kIgL1mH5xZrinc27sE6p3mChXKGW2hJorTJQ5lDT/4Qk1d5goUyhp/scS6lBhoqqhpJlQCnXoMFHFUNLMUKGWChM1GWrHmCANtXSYKBlq60sFCvOvu0cY7lZ0UIrlepKX4Xqy1Z60kiWhUTSwJBqvym4hzQWw3I9MVwhpZtB7FlRZC5a1xHQ01SHNDM8Fz/MKigZab8KEVs/YQZoCa8WI35YuZAShgexSFplHB6Qp4IHWBkTREBYyjecqwDphFC27WSrXa2JpTmCdej1FJ6i2TCLNAvsehh7tnDEWpFmBhT+3mg9waRrgFZR3LVjFNGsKA9I0Qij+1/WSd9uXSNMJm4VnW8/FSLM2m0clRZqNMGIEs0zFuKU3vdkpIc0OcLAyfThD6P14FuERvGuIFGmOjDRHRpojI82RkebISHNkpDksq/AXMG+x/H9BkzYAAAAASUVORK5CYII=" InformativeScreenshot="7281e6928773aee04f4fdc8816448495.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="1090, 252, 48, 45" CvType="Icon" DesignTimeRectangle="1088, 251, 48, 48" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Copy to clipboard' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Copy to clipboard' tag='BUTTON' type='' class='pword-button copy tooltip' check:text='Copy to clipboard' /&gt;" Guid="21f46636-e6c2-478e-9fee-eababcfae936" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGKSURBVGhD7ZnRacNQFEO9QwbKCFmiA3SOfmdf168oEFtXIGgU+wY/OB85VJIfpflwp+lrmj+KUnamlJ0pZWdK2ZlSdqaUC5fvy3z9uR6K8UzVs64o5cIoONoZz1Q964pSLpwXesN56YVu99uf25OX/g2Nz9XPHY5SLqgLHenbr/yNkQAj8HzG58rveR7PtIIEOC+0w4lc6J3ffmPr+Qy3fe5/X6gsDWFtkwAqbJWGsLZJABW2SkNY2ySAClulIaxtEkCFrdIQ1jYJoMJWaQhrmwRQYas0hLVNAqiwVRrC2iYBVNgqDWFtkwAqbJWGsLZJABW2SkNY2ySAClulIaxtEkCFrdIQ1jYJoMJWaQhrmwRQYas0hLVNAqiwVRrC2iYBVNgqDWFtkwAqbJWGsLZJABW2SkNY2ySAClulIaxtEkCFrdIQ1jYJoMJWaQhrmwRQYas0hLVNAqiwVRrC2iYBti/lHy/Gt6VtXjQqRslRznmhio+7UNt/eLWllJ0pZWdK2ZlSdqaUbZnmX8klSwVSk0SDAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Copy to clipboard'" sap:VirtualizedContainerService.HintSize="388,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a1cc7c88-8a5d-4579-9f2d-0c05ccf2a9f9" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="https://www.rpasamples.com/passwordgenerator" CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="1090, 252, 48, 45" CvType="Icon" DesignTimeRectangle="1088, 251, 48, 48" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Copy to clipboard' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Copy to clipboard' tag='BUTTON' type='' class='pword-button copy tooltip' check:text='Copy to clipboard' /&gt;" Guid="30807dce-74e8-4e3f-8042-34f9007cdd46" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGKSURBVGhD7ZnRacNQFEO9QwbKCFmiA3SOfmdf168oEFtXIGgU+wY/OB85VJIfpflwp+lrmj+KUnamlJ0pZWdK2ZlSdqaUC5fvy3z9uR6K8UzVs64o5cIoONoZz1Q964pSLpwXesN56YVu99uf25OX/g2Nz9XPHY5SLqgLHenbr/yNkQAj8HzG58rveR7PtIIEOC+0w4lc6J3ffmPr+Qy3fe5/X6gsDWFtkwAqbJWGsLZJABW2SkNY2ySAClulIaxtEkCFrdIQ1jYJoMJWaQhrmwRQYas0hLVNAqiwVRrC2iYBVNgqDWFtkwAqbJWGsLZJABW2SkNY2ySAClulIaxtEkCFrdIQ1jYJoMJWaQhrmwRQYas0hLVNAqiwVRrC2iYBVNgqDWFtkwAqbJWGsLZJABW2SkNY2ySAClulIaxtEkCFrdIQ1jYJoMJWaQhrmwRQYas0hLVNAqiwVRrC2iYBti/lHy/Gt6VtXjQqRslRznmhio+7UNt/eLWllJ0pZWdK2ZlSdqaUbZnmX8klSwVSk0SDAAAAAElFTkSuQmCC" InformativeScreenshot="05dfc99f9c187b86697f8a52ca2283de.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Password Generator' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="eead7299-36fd-476a-a965-5647e0529719" CvElementArea="1025, 250, 55, 48" CvType="Icon" DesignTimeRectangle="1028, 251, 48, 48" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='pword-button refresh tooltip' aaname='Generate new password' check:text='Generate new password' /&gt;" Guid="00ae1292-c461-46c9-b731-8d9ce45e09ed" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKmSURBVGhD3Zg9TmMxFIWzBJbAElgCS2AJFNQjummhpqCiJe10SNNOQUULLR0SNRIVtWe+aCw5znn2vY5fnsyRPik5ip99/Bu/1epiFb4V0hwZaY6MNEdGmiMjzZGR5shIswNHP47CyfVJOLs7C5e/Ljec35+H05vTcPzzWJbpgjQbobFXv6/Cy/tLqOnz6zM8PD/0DydNJwSxhJjS4+vjZvTUs91I0wjTil7uJTqFaarqMiNNA/Qo02YOse5UnSakWYEFPleYKOpQdVeRZgEqOpTWT2vZhiLSnICpMPfI5HKPlDQFbK/eMCxyNo3bP7eb7ZzdzCvqdG3t0hQw/BbRABpe2q1oICGt4nnqORJpZnDOWMSIeHqT0Nbzy3xOSTPDMlX4DeeSKl+DTrCgyu4gzQQeVNPbx1tzmO5IM4HFXBNTUpVdhPiBHmahMnVS6P2a8jJ0wlYljbBlu0c+/ULhff5kIgL1mH5xZrinc27sE6p3mChXKGW2hJorTJQ5lDT/4Qk1d5goUyhp/scS6lBhoqqhpJlQCnXoMFHFUNLMUKGWChM1GWrHmCANtXSYKBlq60sFCvOvu0cY7lZ0UIrlepKX4Xqy1Z60kiWhUTSwJBqvym4hzQWw3I9MVwhpZtB7FlRZC5a1xHQ01SHNDM8Fz/MKigZab8KEVs/YQZoCa8WI35YuZAShgexSFplHB6Qp4IHWBkTREBYyjecqwDphFC27WSrXa2JpTmCdej1FJ6i2TCLNAvsehh7tnDEWpFmBhT+3mg9waRrgFZR3LVjFNGsKA9I0Qij+1/WSd9uXSNMJm4VnW8/FSLM2m0clRZqNMGIEs0zFuKU3vdkpIc0OcLAyfThD6P14FuERvGuIFGmOjDRHRpojI82RkebISHNkpDksq/AXMG+x/H9BkzYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <uix:NClick.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NClick.VerifyOptions>
+                </uix:NClick>
+                <ui:GetFromClipboard TimeoutMS="{x:Null}" DisplayName="Get From Clipboard Password" sap:VirtualizedContainerService.HintSize="388,50" sap2010:WorkflowViewState.IdRef="GetFromClipboard_1">
+                  <ui:GetFromClipboard.Result>
+                    <OutArgument x:TypeArguments="x:String">[strPasswordText]</OutArgument>
+                  </ui:GetFromClipboard.Result>
+                </ui:GetFromClipboard>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="2352, 196, 1436, 1844" BrowserType="Edge" IconBase64="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" InformativeScreenshot="17402f4c5c859bd2f01668b646629670.jpg" Selector="&lt;html app='msedge.exe' title='Password Generator' /&gt;" Title="Password Generator" Url="[strWebAddress]" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <Sequence DisplayName="Sequence Notepad" sap:VirtualizedContainerService.HintSize="546,1119" sap2010:WorkflowViewState.IdRef="Sequence_9">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="[strFileOutput]" DisplayName="Start Process Notepad" FileName="[strProgramPathNotepad]" sap:VirtualizedContainerService.HintSize="450,120" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
+        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Application: Untitled - Notepad" sap:VirtualizedContainerService.HintSize="450,888" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="8ae4fdf0-cd28-457e-a03f-10c7eebc90a7" Version="V2">
+          <uix:NApplicationCard.Body>
+            <ActivityAction x:TypeArguments="x:Object">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+              </ActivityAction.Argument>
+              <Sequence DisplayName="Do Paste" sap:VirtualizedContainerService.HintSize="416,574" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts Paste" sap:VirtualizedContainerService.HintSize="354,247" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="8ae4fdf0-cd28-457e-a03f-10c7eebc90a7" Shortcuts="[d(hk)][d(ctrl)]v[u(ctrl)][u(hk)]" Version="V3">
+                  <uix:NKeyboardShortcuts.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NKeyboardShortcuts.VerifyOptions>
+                </uix:NKeyboardShortcuts>
+                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts Save" sap:VirtualizedContainerService.HintSize="354,240" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" ScopeIdentifier="8ae4fdf0-cd28-457e-a03f-10c7eebc90a7" Shortcuts="[d(hk)][d(ctrl)]s[u(ctrl)][u(hk)]" Version="V3">
+                  <uix:NKeyboardShortcuts.VerifyOptions>
+                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                      <uix:VerifyExecutionOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionOptions.Retry>
+                      <uix:VerifyExecutionOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionOptions.Timeout>
+                    </uix:VerifyExecutionOptions>
+                  </uix:NKeyboardShortcuts.VerifyOptions>
+                </uix:NKeyboardShortcuts>
+              </Sequence>
+            </ActivityAction>
+          </uix:NApplicationCard.Body>
+          <uix:NApplicationCard.TargetApp>
+            <uix:TargetApp Area="312, 312, 1106, 1563" FilePath="Microsoft.WindowsNotepad_8wekyb3d8bbwe!App" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO6SURBVFhHrZRHU1RBFIXZWCLzcwxVblWQDCJm0UFFgqBIGAUF/A8uwCrdsDIVkpRkIAmSw+QBkTSBYUgK6+vt7tc9702gB8euOvWqevG+c85998Xsdw6VPtejgDyVq6juDnyUF1ApV1HdRXTqHHt6FNTad8ULiKqtv6HKsqO5Mxi3oNK4qbl7OO2D0ql1zV3xxBrcG/dA0ZhH3katfQ9qEF5j+wMZLVP0BenNk1Bl3oHH5m1IbZqgdylN41AxuwnlsxuQ9H6M3iW+G4UHCL8/6YWEtyP0Lv7NCAGj3FA46pa3UWPbhacIf4KJqy0s9WOEPzJtg8FEEm8p4E0om9lgiVEE/GCSwUswcfG4SE3BBaMuyB9xyQ0EgTG1AeEcTOEILptW4ASspC6Z8IYAuyn47g8nlYIJfwiY101TK3MWYJ46EOyfs6i7AMH5IwycN7wKd1AKJvzRgnndajCrWwsOSE3BLHXesJOCbw+twK3vK3ID+82Zpo5gzhSMEmAKX4bcwWW5AU3dOGedoYF+zf8iXWWDAOsHl+DmwJLcgHbOvqgMxKEBDr4xsAg5/YtyA7zuwDkH1R1uzqhcTK3H1Bx8A8E5fb/gOkrBhD//Omf2kanrVsD9DHytdwGu9v6UGwi1VgzMU6vWaoh/3do587r94AW48u0nXP4agQG+VgRM9pl8SKHmG4niKuvhKoIZfB4ufZmTGwisO1oDDDwPFxF+4bNDboDXrZ7zvnUHzZnXjWAUAzN4do9dbiDU71M65z7tnAmY1M1TZ/c44Hy3HbK6bXIDQWuFv8/AteJgkVozZ3/dFIypsxB+rssGmV1WuYHAfSY/k1DzjURxFfU0NYV3WiGjwyI3EFh3NAaOoAEK7rRAOsLTPpnlBljd8jnztQquW5UYRcEdZkhFeMpHk9yAGsx/nwedMwGTunnqVAQTeHK7UW4g1O8zeK0YmKwV/7r9qdVglpqAk1CJbbNyA36wdq0YWJU6CKzUTcBK3cntJgE+2zoLCa0zcgMc7K/74HMWqRGciOCzCE5omYH4lmm5gUjnTOFh5pzUxlP7wWeap+H0hym5gSbzYkDdB58zr1sNPoVqHIvgRzQ3NwdEDoeDym63B8lmswlZrVYhi8UiZDabqUwmk5DRGMEWvH6mB5/PR7W+vk7l9XqF1tbWqDwej5Db7RZyuVxCTqeTanV1lep1XY7cwP0TsVB07DAUKMo/Gp3IOwpRxcdjofxkrNzAq3Rd/ovUOGhI+X8i73uZpoPGTF2eglFOTMxfgOYUr6FIl+IAAAAASUVORK5CYII=" InformativeScreenshot="de784c41e99c43d9ca710ccfc43ffc70.png" Selector="&lt;wnd app='notepad.exe' appid='Microsoft.WindowsNotepad_8wekyb3d8bbwe!App' title='Untitled - Notepad' /&gt;" Title="RPADev-S05P01-PasswordGenerator.txt - Notepad" />
+          </uix:NApplicationCard.TargetApp>
+        </uix:NApplicationCard>
+      </Sequence>
+    </Sequence>
+    <Sequence DisplayName="Sequence Result" sap:VirtualizedContainerService.HintSize="608,284" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message RPADev-S05P01-PasswordGenerator.Main.Print;" sap:VirtualizedContainerService.HintSize="388,164" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;RPADev-S05P01-PasswordGenerator.Main.Print;&quot; + Environment.NewLine + &quot;Generated Password: &quot; + strPasswordText]" />
+    </Sequence>
+    <ui:LogMessage DisplayName="Log Message RPADev-S05P01-PasswordGenerator.Main.End;" sap:VirtualizedContainerService.HintSize="608,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;RPADev-S05P01-PasswordGenerator.Main.End;&quot;]" />
+  </Sequence>
+</Activity>

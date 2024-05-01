@@ -1,0 +1,9 @@
+04/30/2024 23:24:22 => [Debug] Debug started for file: Main
+04/30/2024 23:24:22 => [Info] RPADev-S05P01-PasswordGenerator-VB execution started
+04/30/2024 23:24:23 => [Info] RPADev-S05P01-PasswordGenerator.Main.Begin;
+04/30/2024 23:24:23 => [Debug] Audit: Using Web App. Browser: Edge URL: https://www.rpasamples.com/passwordgenerator
+04/30/2024 23:24:28 => [Debug] Audit: Using Desktop App. App: Microsoft.WindowsNotepad* Arguments:
+04/30/2024 23:24:31 => [Info] RPADev-S05P01-PasswordGenerator.Main.Print;
+Generated Password: @7$j%2vq6EMB
+04/30/2024 23:24:31 => [Info] RPADev-S05P01-PasswordGenerator.Main.End;
+04/30/2024 23:24:31 => [Info] RPADev-S05P01-PasswordGenerator-VB execution ended in: 00:00:08
